@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+@use "./font-face" as *;
+/*------------------GENERAL--------------------*/
+
+body {
+  font-family: $font-family-base;
+  background-color: var(--primary-red);
+  background-image: url("../images/bg-intro-mobile.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(md) {
+    background-image: url("../images/bg-intro-desktop.png");
+    background-repeat: repeat-y;
+  }
+}
+
+* {
+  font-family: "Poppins";
+  // font-weight: 200;
+}
+
+main {
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
+}

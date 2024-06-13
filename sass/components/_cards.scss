@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+.card {
+  // background: linear-gradient(
+  //   to bottom,
+  //   hsl(215.29deg 22.08% 15.1%),
+  //   hsl(213.75deg 24.24% 12.94%)
+  // );
+  background: linear-gradient(
+    180deg,
+    hsl(215.29deg 22.57% 16.18%),
+    hsl(213.75deg 24.67% 9.59%) 50%
+  );
+  border-radius: 10px;
+  padding: 23px;
+  @include mq(md) {
+    max-width: 360px;
+  }
+}
